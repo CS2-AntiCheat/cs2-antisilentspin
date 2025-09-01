@@ -19,7 +19,7 @@ public class Config : BasePluginConfig
     [JsonPropertyName("MaxSuspicion")] public int MaxSuspicion { get; set; } = 5;
     [JsonPropertyName("AngleThreshold")] public float AngleThreshold { get; set; } = 50f;
     [JsonPropertyName("AngularSpeedThreshold")] public float AngularSpeedThreshold { get; set; } = 400f;
-    [JsonPropertyName("PunishmentType (PrintAll, PrintAdmin, Kick, Ban)")] public string PunishmentType { get; set; } = "PrintAdmin";
+    [JsonPropertyName("PunishmentType")] public string PunishmentType { get; set; } = "PrintAdmin";
     [JsonPropertyName("BanTimeInMinutes")] public int BanTimeInMinutes { get; set; } = 0;
     [JsonPropertyName("DiscordWebhookUrl")] public string DiscordWebhookUrl { get; set; } = string.Empty;
     [JsonPropertyName("WebhookSettings")] public WebhookConfig Webhook { get; set; } = new();
@@ -39,7 +39,7 @@ public class WebhookConfig
 public class AntiSilentSpin : BasePlugin, IPluginConfig<Config>
 {
     public override string ModuleName => "Anti Silent & Spinbot";
-    public override string ModuleVersion => "v2";
+    public override string ModuleVersion => "v3";
     public override string ModuleAuthor => "schwarper";
     public override string ModuleDescription => "Detects SilentAim and Spinbot cheats.";
 
