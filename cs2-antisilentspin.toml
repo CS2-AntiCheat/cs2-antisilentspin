@@ -1,0 +1,44 @@
+﻿# Maximum suspicion points a player can accumulate
+# Before punishment is triggered
+MaxSuspicion = 5
+
+# Maximum allowed angle difference (degrees)
+# If exceeded, it increases suspicion
+AngleThreshold = 50.0
+
+# Maximum allowed angular speed (degrees per second)
+# If exceeded, it increases suspicion
+AngularSpeedThreshold = 400.0
+
+# Type of punishment when suspicion threshold is reached:
+# Options: "PrintAll", "PrintAdmin", "Kick", "Ban"
+PunishmentType = "PrintAdmin"
+
+# Ban duration in minutes (only applies if PunishmentType = "Ban")
+# 0 means permanent ban
+BanTimeInMinutes = 0
+
+# Discord webhook URL for sending notifications
+DiscordWebhookUrl = ""
+
+[WebhookSettings]
+# Title shown in the Discord embed
+Title = "🚨 Cheat Detected"
+
+# Embed color in hex format
+Color = "#FF0000"
+
+# Footer text of the embed
+Footer = "Anti-Cheat System"
+
+# Username of the webhook bot
+Username = "Anti-Cheat Bot"
+
+# Avatar image URL of the webhook bot
+AvatarUrl = ""
+
+# Thumbnail image URL for the embed
+ThumbnailUrl = ""
+
+# Main image URL for the embed
+ImageUrl = ""

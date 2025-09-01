@@ -9,9 +9,9 @@ using CounterStrikeSharp.API.Modules.Admin;
 using CounterStrikeSharp.API.Modules.Cvars;
 using CounterStrikeSharp.API.Modules.Utils;
 using CounterStrikeSharp.API.ValveConstants.Protobuf;
+using Microsoft.Extensions.Localization;
 using static CounterStrikeSharp.API.Core.Listeners;
 using Vector = CounterStrikeSharp.API.Modules.Utils.Vector;
-using Microsoft.Extensions.Localization;
 namespace AntiSilentSpin;
 
 public class Config : BasePluginConfig
@@ -39,7 +39,7 @@ public class WebhookConfig
 public class AntiSilentSpin : BasePlugin, IPluginConfig<Config>
 {
     public override string ModuleName => "Anti Silent & Spinbot";
-    public override string ModuleVersion => "v1";
+    public override string ModuleVersion => "v2";
     public override string ModuleAuthor => "schwarper";
     public override string ModuleDescription => "Detects SilentAim and Spinbot cheats.";
 

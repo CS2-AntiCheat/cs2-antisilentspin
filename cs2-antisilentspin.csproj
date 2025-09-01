@@ -16,4 +16,11 @@
 	<ItemGroup>
 		<None Update="lang\**\*.*" CopyToOutputDirectory="PreserveNewest" />
 	</ItemGroup>
+
+	<Target Name="CopyConfigFiles" AfterTargets="Build">
+		<ItemGroup>
+			<FilesToCopy Include="$(ProjectDir)cs2-antisilentspin.toml" />
+		</ItemGroup>
+		<Copy SourceFiles="@(FilesToCopy)" DestinationFolder="$(ProjectDir)BuildOutput\configs\plugins\cs2-antisilentspin\" />
+	</Target>
 </Project>
